@@ -1,0 +1,23 @@
+captainVersion: 4
+caproverOneClickApp:
+    instructions:
+        start: Setting up LAMP Stack
+        end: LAMP Stack deployed.
+########
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/arm64
+    ports:
+      - "8080:80"
+    volumes:
+      - ./cpv-lab-files:/var/www/html
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=cpvlab
+      - DB_PASSWORD=cpvlabpassword
+      - DB_NAME=cpvlab

@@ -1,0 +1,126 @@
+body{
+	background-color: #3a3956;
+	font: 14px 'Muli', sans-serif;
+}
+
+.login-box {
+	width:320px;
+	height: 352px;
+	padding: 58px 0px 0 0px;
+	color: #ebebeb;
+	font-size: 16px;
+	/*background: url(../../images/login-box-backg.png) no-repeat left top;*/
+}
+
+.login-box img {
+	border:none;
+}
+
+.login-box h2 {
+	padding:0;
+	margin:0;
+	color: #ebebeb;
+	font-size: 44px;
+	font-weight: bold;
+}
+
+.login-box-name {
+	float: left;
+	display:inline;
+	width:80px;
+	text-align: right;
+	padding: 14px 10px 0 0;
+	margin:0 0 7px 0;
+	font-weight: bold;
+}
+
+.login-box-field {
+	float: left;
+	display:inline;
+	width:230px;
+	margin:0;
+	margin:0 0 7px 0;
+}
+
+.form-login  {
+	width: 205px;
+	padding: 10px 4px 6px 3px;
+	border: 3px solid #28374a;
+	background-color:#324863;
+	font-size: 16px;
+	color: #ebebeb;
+}
+
+.divMessage {
+    font-weight:bold;
+}
+
+.divMessage a {
+	color: #22dd22;
+}
+
+.hidden{
+	display:none;
+}
+
+.red {
+    color:#FF9;
+}
+
+
+.btn-success,
+.label-success,
+.progress-bar-success,
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+	background-color: #7673e6;
+	color:#fff;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+	color: #fff;
+	background-color: #5d5ad2;
+}
+
+.btn {
+	font-weight: 600;
+	font-family: 'Muli', sans-serif;
+	transition: background .2s;
+	padding: 9px 12px;
+	border: 0;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+	width: 130px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+	outline: none;
+}
+
+.btn i {
+	font-weight: 300;
+}

@@ -1,0 +1,199 @@
+/********** horizontal-navigation ***********/
+body.horizontal-navigation div.header {
+	height: 65px;
+}
+
+.header .main-navbar .header-brand {
+	min-width: 140px;
+	text-align: left;
+}
+
+body.horizontal-navigation .wave {
+	height: 600px;
+}
+
+body.horizontal-navigation .page-header {
+	margin: 1.5rem 0 1.5rem 0;
+}
+
+.navbar {
+	position: relative;
+	box-shadow: none;
+}
+
+body.horizontal-navigation .fixed-header {
+	position: fixed !important;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+body.horizontal-navigation .fixed-header.visible-title {
+	top: 0;
+}
+
+body.horizontal-navigation .fixed-header.visible-title.horizontal-main {
+	box-shadow: 0 0 25px rgba(0, 0, 0, .15) !important;
+}
+
+body.horizontal-navigation .horizontalMenu-list .header-brand {
+	padding: 8px 0 0 0;
+}
+
+body.horizontal-navigation .horizontalMenu>.horizontalMenu-list>li:last-child {
+	margin-right: 0;
+}
+
+.horizontalMenu .header-brand {
+	display: none;
+}
+
+.visible-title .horizontalMenu .header-brand {
+	display: inline-block;
+    margin-right: 0;
+	max-width: 121px;
+	padding-top: 8px;
+}
+
+.horizontalMenu > .horizontalMenu-list > li > a i.side-menu__icon {
+	margin-right: 4px !important;
+	width: 18px;
+	display: inline-block;
+	color: #7673e6;
+	vertical-align: baseline;
+}
+
+body.horizontal-navigation .horizontalMenu-list li:nth-child(1) .fa-angle-down {
+	display: none;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a>.fe,
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a>.entypo {
+	margin-right: 9px;
+}
+
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a>.fa,
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a>.fe,
+.horizontalMenu>.horizontalMenu-list>li>ul.sub-menu>li>a>.entypo {
+	width: 13px;
+}
+
+/*********** Responsive ***********/
+
+@media (min-width: 992px) {
+
+	.horizontalMenu {
+		display: flex;
+	}
+
+	.horizontalMenu>.horizontalMenu-list {
+		width: auto;
+		display: table;
+		text-align: center;
+	}
+
+	.horizontalMenu>.horizontalMenu-list>li {
+		margin-right: 10px;
+		float: none;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 991.98px) {
+
+	.main-navbar .header-brand .header-brand-img {
+		margin-left:2rem;
+	}
+
+	.active .header .navbar{
+		position:relative;
+	}
+	.active .page-header{
+		padding-top:0;
+	}
+
+	.navbar {
+		position:fixed;
+		box-shadow: 0 2px 17px 2px rgb(0,0,0,0.2);
+		z-index:1003;
+	}
+
+	.page-header {
+		padding-top: 0;
+	}
+
+	.horizontal-main {
+		border: none;
+	}
+
+	.hor-toggle.animated-arrow {
+		margin-left: 0 !important;
+	}
+
+	.active .horizontalMenucontainer {
+		margin-left: 0;
+	}
+
+	.active .horizontalMenu .overlapblackbg {
+		display: none;
+	}
+
+	.active .hor-menu .horizontalMenu {
+		padding-top: 65px;
+	}
+
+	.active .horizontalMenu > .horizontalMenu-list {
+		box-shadow: 0 2px 17px 2px rgba(0, 0, 0, 0.2);
+	}
+
+	.horizontalMenu > .horizontalMenu-list > li > a {
+		margin: 0;
+	}
+
+	.hor-menu .horizontalMenu > .horizontalMenu-list > li > a:hover,
+	.horizontalMenu > .horizontalMenu-list > li:hover > a {
+		background-color: #F1F0FB !important;
+		color: #7673e6 !important;
+	}
+
+	.horizontalMenu > .horizontalMenu-list > li:hover > a > .side-menu__icon {
+		color: #7673e6 !important;
+	}
+
+	.horizontalMenu > .horizontalMenu-list > li > ul.sub-menu {
+		border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+		background-color: rgb(230, 229, 243,0.2);
+	}
+
+	.horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li a {
+		padding-left: 40px;
+	}
+
+	.horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li a:hover {
+		background-color: rgba(225,225,225,0.1);
+		color: #7673e6 !important;
+	}
+
+	.horizontalMenu > .horizontalMenu-list > li > ul.sub-menu > li > a > .fa {
+		display: inline-block;
+	}
+
+	.horizontalMenu > .horizontalMenu-list > li > a.sub-icon .fa-angle-down {
+		display: none;
+	}
+}
+
+@media (max-width: 785.98px) {
+
+	.page-header {
+		display: flex !important;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.header .navbar-right .nav-link {
+		padding-right: 8px !important;
+	}
+}

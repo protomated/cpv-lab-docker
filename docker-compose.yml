@@ -1,0 +1,34 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/arm64
+    ports:
+      - "8080:80"
+    volumes:
+      - ./cpv-lab-files:/var/www/html
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=cpvlab
+      - DB_PASSWORD=cpvlabpassword
+      - DB_NAME=cpvlab
+
+  db:
+    image: mysql:8.0
+    platform: linux/arm64
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=cpvlab
+      - MYSQL_USER=cpvlab
+      - MYSQL_PASSWORD=cpvlabpassword
+    cap_add:
+      - SYS_NICE  # CAP_SYS_NICE
+
+volumes:
+  db_data:

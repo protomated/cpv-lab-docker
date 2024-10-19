@@ -1,0 +1,278 @@
+body,
+.slide-item,
+.form-group label,
+.form-control,
+.SumoSelect.open .search-txt,
+.table {
+	color: #e2e2f9 !important;
+}
+
+.inactiveInput {
+	background-color: rgba(255,255,255,0.02);
+}
+
+.slide-menu a.active {
+	color: #8381e8 !important;
+}
+
+label.custom-color,
+span.custom-color {
+	color: #3a3956 !important;
+}
+
+a {
+	color: #8381e8;
+}
+
+input::placeholder,
+input:-ms-input-placeholder,
+input.search-txt::-ms-input-placeholder {
+  color: #ababb3 !important;
+  opacity: 1;
+}
+
+.daterangepicker {
+	background-color: #2d2d42;
+}
+
+.daterangepicker:after {
+	border-bottom: 6px solid #2d2d42;
+}
+
+.daterangepicker:before {
+	border-bottom: 7px solid #2d2d42;
+}
+
+.ranges li {
+	background-color: #343448;
+	border: 1px solid #343448;
+}
+
+.daterangepicker .calendar-table {
+	background-color: #343350;
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+.daterangepicker .calendar td,
+.daterangepicker .calendar th {
+	color: #C5C5F3 !important;
+}
+
+.daterangepicker td.off,
+.daterangepicker td.off.start-date,
+.daterangepicker td.off.end-date {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.daterangepicker td.off.in-range,
+.daterangepicker td.in-range,
+.daterangepicker td.available:hover {
+	background: #2e2d46;
+}
+
+.daterangepicker .input-mini {
+	border: 1px solid rgba(255,255,255,0.1);
+}
+
+.dataTables_wrapper {
+	display: block !important;
+}
+
+.table thead th,
+.table th.sorting {
+	background-color: #7673e6;
+	color: #fff;
+}
+
+table th a,
+table th a:hover {
+	color: #d6d6f6;
+}
+
+.table th.sorting:hover {
+	color: #3a3956;
+}
+
+.icheckbox-whitebg thead th .icheckbox_flat-purple.checked {
+	background: url(../plugins/iCheck/flat/dark/white.png) no-repeat;
+	background-position: -22px 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: #343350;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+	background-color: inherit;
+}
+
+/* drill-down table */
+.table-drilldown tbody tr.levels-term {
+	background-color: #343350;
+}
+
+.table-drilldown tbody tr.level-2 {
+	background-color: #2d2d42;
+}
+
+.table-drilldown tbody tr.level-3 {
+	background-color: #47466d;
+}
+
+.table-drilldown tbody tr.level-4 {
+	background-color: #3e3e5b;
+}
+
+.table-hover tbody tr:hover {
+	background-color: rgba(255,255,255,0.02);
+	color: inherit;
+}
+.table th.sorting,
+.table th.sorting_asc,
+.table th.sorting_desc {
+	color: #d6d6f6;
+}
+.table th.sorting:hover,
+.table th.sorting_asc:hover,
+.table th.sorting_desc:hover {
+	color: #d6d6f6;
+}
+
+tfoot th {
+	background-color: inherit;
+}
+
+.profitGreen {
+	color: #38d250;
+}
+
+.profitRed {
+	color: #ff473d;
+}
+
+.card-header a.btn-icon {
+	color: #C5C5F3;
+}
+
+.card-header a.btn-icon:hover {
+	color: #b1b1da;
+}
+
+.btn-default {
+	color: #565667;
+}
+
+.btn-default:hover {
+	color: #81818d;
+}
+
+.dropdown-item a.font-16:hover {
+	color: inherit;
+}
+
+.SumoSelect>.CaptionCont span {
+	border-color: transparent;
+}
+
+.SumoSelect>.CaptionCont>span.placeholder {
+	color: rgba(255,255,255,0.2);
+}
+
+.campaign-menu .campaign-menu-item {
+	color: #e1e1f3;
+}
+
+.campaign-menu .campaign-menu-item h5 {
+	color: #c5c5f3;
+}
+
+.placeholder {
+	background: transparent;
+}
+
+.option-item .item-header,
+.level-item .item-header,
+.path-header, .email-header {
+	background-color: #c5c5f3;
+}
+
+.iradio_flat-purple {
+	vertical-align: bottom;
+}
+
+.rowMVsnip.bg-light-gray {
+	background-color: rgba(213, 213, 247, 0.6);
+}
+
+#divMobileAud img {
+	filter: invert(1);
+}
+
+.close {
+	color: #585770;
+}
+
+.highlightRow,
+.highlightRowColor {
+	color: #212529;
+}
+
+.highlightRow:hover,
+.highlightRowColor:hover {
+	color: #212529 !important;
+}
+
+.alertRowColor,
+.alertRow {
+	color: #212529;
+}
+
+.alertRowColor:hover,
+.alertRow:hover {
+	color: #212529 !important;
+}
+
+.inactiveRowColor,
+.inactiveRow {
+	color: #212529;
+}
+
+.inactiveRowColor:hover,
+.inactiveRow:hover {
+	color: #212529 !important;
+}
+
+.context-menu-list.context-menu-root {
+	background-color: #2d2d42;
+}
+.context-menu-item {
+	background-color: #2d2d42;
+}
+
+.context-menu-item.hover {
+	background-color: #343350;
+}
+
+.clipboardSuccess {
+	color: lightgreen;
+}
+
+.modalQrBack {
+	background-color: #e5e6e7;
+}
+
+.chart-container-trends .legend table {
+	color: #c5c5f3 !important;
+}
+
+#flotTip{ 
+	color: DarkBlue;
+}
+
+.bonuses-page .nav-pills .nav-item .nav-link {
+	color: #c5c5f3 !important;
+}
+
+.nav-pills .nav-item .nav-link.active {
+	color: #fff !important;
+}
