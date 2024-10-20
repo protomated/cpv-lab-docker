@@ -1,0 +1,1 @@
+Redirect Type {include file='partTooltip.tpl' tooltipID=13}

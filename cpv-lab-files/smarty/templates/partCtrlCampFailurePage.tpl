@@ -1,0 +1,1 @@
+<input name="txtFailurePage" type="text" class="form-control" value="{$campaignDetails.FailurePage}"/>

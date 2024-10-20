@@ -1,0 +1,1 @@
+<button onclick="window.location.href = '{$exportLink|default:''}'; return false" class="btn btn-default {$exportExtraClass|default:''}" data-toggle="tooltip" data-placement="right" title="{if $exportText|default:''==''}{$exportTitle|default:'Export Table as CSV'}{/if}">&nbsp;<i class="fe fe-share"></i>&nbsp;{$exportText|default:''}</button>

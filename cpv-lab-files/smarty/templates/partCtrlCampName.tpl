@@ -1,0 +1,1 @@
+<input name="txtName" id="txtName" type="text" class="form-control" value="{$campaignDetails.CampaignName}" onblur="writeCampaignName(this)"/>

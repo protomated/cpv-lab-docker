@@ -1,0 +1,1 @@
+<input name="txtCampaignID" type="text" readonly="readonly" class="form-control text-center" value="{$campaignDetails.CampaignID}" />

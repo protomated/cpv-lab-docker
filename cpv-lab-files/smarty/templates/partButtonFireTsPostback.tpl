@@ -1,0 +1,1 @@
+<button onclick="bulkAction(1); return false;" class="btn btn-default {$extraClass|default:''}" data-toggle="tooltip" data-placement="right" title="Pass Selected Conversions to the Traffic Source">&nbsp;<i class="fa fa-usd"></i>&nbsp;</button>

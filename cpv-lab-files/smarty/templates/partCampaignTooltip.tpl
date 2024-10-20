@@ -1,0 +1,1 @@
+<a tabindex="-1" class="fa fa-info-circle popover-a tooltipCampaignIcon" data-placement="bottom" data-toggle="popover" data-trigger="focus" data-html="true" title="" data-content='{$campaignTooltip nofilter}' data-original-title=""></a>

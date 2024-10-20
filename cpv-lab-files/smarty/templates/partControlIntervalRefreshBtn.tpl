@@ -1,0 +1,1 @@
+<button class="btn btn-primary" onclick="changeCampaign({if $withInterval|default:false}true{/if}); return false;" data-placement="right" title="Refresh using the new dates" data-toggle="tooltip" style="height: 36px;"><i class="fa fa-refresh"></i>{if $showText|default:true} Refresh{/if}</button>

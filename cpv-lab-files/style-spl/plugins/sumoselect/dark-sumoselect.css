@@ -1,0 +1,38 @@
+.SumoSelect.open .search-txt {
+    background: #46456f;
+}
+.SumoSelect>.CaptionCont {
+	border: 1px solid rgba(255,255,255,0.1);
+    color: #c5c5f3;
+	background-color: #46456f;
+}
+.SumoSelect>.optWrapper {
+	background:#2d2d42;
+}
+.SumoSelect.open>.optWrapper {
+	box-shadow: 0 2px 17px 2px rgb(255,255,255,0.04);
+}
+.SumoSelect>.optWrapper>.options li.opt {
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.SumoSelect>.optWrapper.multiple>.options li.opt span i, .SumoSelect .select-all>span i {
+	border: 1px solid rgba(255,255,255,0.1);
+	background-color:#46456f;
+}
+.SumoSelect>.optWrapper>.MultiControls {
+	background-color: #46456f;
+}
+.SumoSelect>.optWrapper.multiple>.MultiControls>p:hover {
+	background-color:  #46456f;
+}
+.SumoSelect>.optWrapper.multiple>.MultiControls>p.btnOk {
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+.SumoSelect.disabled>.CaptionCont {
+	border-color: rgba(255,255,255,0.1);
+}
+
+.SumoSelect .select-all {
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+	background-color: #46456f;
+}

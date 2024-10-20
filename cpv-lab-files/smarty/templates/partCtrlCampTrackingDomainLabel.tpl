@@ -1,0 +1,2 @@
+Tracking Domain {include file='partTooltip.tpl' tooltipID=17}
+{if $showupdstobj.customdomains|default:0}<small class="text-muted updColor"><a href="{if $iscldvrs|default:0}https://billing.stripe.com/p/login/9AQeWsa2Z32D8x2144{else}https://cpvlab.pro/pricing-signup.php?utm_source=starter-cmpsetup{/if}" target="_blank">Upgrade NOW</a> to use Tracking Domains</small>{/if}

@@ -1,0 +1,1 @@
+Source&nbsp;&nbsp;<img src="images/spinner.gif" alt="Working..." id="spin1" style="width:12px; display:none"/>

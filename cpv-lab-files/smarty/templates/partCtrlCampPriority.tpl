@@ -1,0 +1,1 @@
+<input name="txtPriority" type="text" class="form-control" value="{$campaignDetails.Priority}" onblur="validateInt(this, 0, 65535)" />
