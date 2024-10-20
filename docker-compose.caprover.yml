@@ -6,4 +6,4 @@ caproverOneClickApp:
 ########
 services:
   cpvlabpro:
-    image: protomated/cpv-lab-pro:latest
+    image: ghcr.io/protomated/cpv-lab-pro:latest@sha256:ac5f26d12634878e21731bbc535777e3dbf3f8a33e3c00eb26b32c758b4b70f0

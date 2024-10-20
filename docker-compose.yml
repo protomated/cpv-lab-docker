@@ -1,7 +1,7 @@
 services:
   web:
-    image: protomated/cpv-lab-pro:latest
-    platform: linux/arm64
+    image: ghcr.io/protomated/cpv-lab-pro:latest
+    #    platform: linux/arm64
     ports:
       - "8080:80"
     volumes:
