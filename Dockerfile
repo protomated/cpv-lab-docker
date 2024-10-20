@@ -33,13 +33,24 @@ RUN docker-php-ext-install -j$(nproc) \
     pdo_mysql \
     zip
 
-# Install ionCube Loader for ARM64
-RUN cd /tmp \
-    && wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_aarch64.tar.gz \
-    && tar xvfz ioncube_loaders_lin_aarch64.tar.gz \
-    && cp ioncube/ioncube_loader_lin_8.2.so /usr/local/lib/php/extensions/no-debug-non-zts-20220829/ \
-    && echo "zend_extension = /usr/local/lib/php/extensions/no-debug-non-zts-20220829/ioncube_loader_lin_8.2.so" > /usr/local/etc/php/conf.d/00-ioncube.ini \
-    && rm -rf ioncube*
+# Install ionCube Loader for both AMD64 and ARM64
+RUN cd /tmp && \
+    if [ "$(uname -m)" = "x86_64" ]; then \
+        wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz && \
+        tar xvfz ioncube_loaders_lin_x86-64.tar.gz && \
+        PHP_EXT_DIR=$(php -i | grep extension_dir | awk '{print $3}') && \
+        cp ioncube/ioncube_loader_lin_8.2.so $PHP_EXT_DIR && \
+        echo "zend_extension = $PHP_EXT_DIR/ioncube_loader_lin_8.2.so" > /usr/local/etc/php/conf.d/00-ioncube.ini; \
+    elif [ "$(uname -m)" = "aarch64" ]; then \
+        wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_aarch64.tar.gz && \
+        tar xvfz ioncube_loaders_lin_aarch64.tar.gz && \
+        PHP_EXT_DIR=$(php -i | grep extension_dir | awk '{print $3}') && \
+        cp ioncube/ioncube_loader_lin_8.2.so $PHP_EXT_DIR && \
+        echo "zend_extension = $PHP_EXT_DIR/ioncube_loader_lin_8.2.so" > /usr/local/etc/php/conf.d/00-ioncube.ini; \
+    else \
+        echo "Unsupported architecture: $(uname -m)"; exit 1; \
+    fi && \
+    rm -rf ioncube*
 
 # Configure PHP
 RUN echo "memory_limit = 256M" > /usr/local/etc/php/conf.d/memory-limit.ini
