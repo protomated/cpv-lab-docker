@@ -1,5 +1,5 @@
 # Base image
-FROM --platform=linux/arm64 php:8.2-apache
+FROM php:8.2-apache
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
